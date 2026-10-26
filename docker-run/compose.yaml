@@ -1,0 +1,8 @@
+services:
+  orders-service:
+    image: orders-app:latest
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    volumes:
+      - ../orders:/app/orders
